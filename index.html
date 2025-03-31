@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Burrito Bison: Launcha Libre Online - Free Browser Game</title>
+    <meta name="description" content="Play Burrito Bison: Launcha Libre, a fun wrestling-themed launching game. Launch your character through waves of gummy bears in this addictive free online game.">
+    <link rel="canonical" href="https://gamepalworld.xyz/burrito-bison-launcha-libre" />
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Apple-inspired color palette */
+        :root {
+            --apple-blue: #007AFF;
+            --apple-gray: #8E8E93;
+            --apple-background: #F5F5F7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--apple-background);
+        }
+
+        .game-container {
+            aspect-ratio: 16/9;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header Section -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-en="Burrito Bison: Launcha Libre" data-zh="墨西哥卷饼格斗手：自由摔跤">
+                Burrito Bison: Launcha Libre
+            </h1>
+            <p class="text-xl text-gray-600 mb-6" data-en="Launch yourself through hordes of gummy bears in this epic wrestling adventure!" data-zh="在这场史诗级摔跤冒险中发射自己，冲破软糖熊大军！">
+                Launch yourself through hordes of gummy bears in this epic wrestling adventure!
+            </p>
+        </header>
+
+        <!-- Game Section -->
+        <section class="mb-12">
+            <div class="game-container bg-white rounded-xl shadow-lg p-2">
+                <iframe src="https://game168976.konggames.com/gamez/0016/8976/live/index.html?kongregate_game_version=1702416102&kongregate_host=www.kongregate.com" 
+                        class="game-frame"
+                        allow="fullscreen"
+                        title="Burrito Bison: Launcha Libre">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Game Information -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-xl p-6 shadow-md">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4" data-en="How to Play" data-zh="游戏玩法">
+                    How to Play
+                </h2>
+                <p class="text-gray-600" data-en="Launch Burrito Bison through waves of gummy bears, upgrade your abilities, and try to escape the gummy bear kingdom!" data-zh="将墨西哥卷饼格斗手发射穿过软糖熊大军，升级你的能力，努力逃离软糖王国！">
+                    Launch Burrito Bison through waves of gummy bears, upgrade your abilities, and try to escape the gummy bear kingdom!
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-6 shadow-md">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4" data-en="Game Features" data-zh="游戏特色">
+                    Game Features
+                </h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li data-en="Multiple unique characters to unlock" data-zh="多个独特角色等待解锁">Multiple unique characters to unlock</li>
+                    <li data-en="Upgrade system for abilities" data-zh="技能升级系统">Upgrade system for abilities</li>
+                    <li data-en="Addictive launching mechanics" data-zh="上瘾性的发射机制">Addictive launching mechanics</li>
+                    <li data-en="Colorful graphics and animations" data-zh="绚丽的图形和动画">Colorful graphics and animations</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Language switching based on IP (You'll need to implement the IP detection logic)
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-en]').forEach(element => {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+        }
+
+        // Example usage: setLanguage('zh') for Chinese
+        // You'll need to add IP detection service integration here
+    </script>
+</body>
+</html>
